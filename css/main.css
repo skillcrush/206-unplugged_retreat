@@ -97,6 +97,57 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+ 
+html {
+	font-size: 16px;
+}
+ 
+body {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+ul, 
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+}
+ 
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+ 
+img {
+ max-width: 100%;
+}
+ 
+figure {
+ margin: 0;
+}
+ 
+address {
+ font-style: normal;
+}
+ 
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -215,7 +266,6 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-basis: 33%; */
   width: 55%;
   margin: 30px 0;
 }
@@ -294,10 +344,6 @@ aside {
 .faq h2 {
   margin-bottom: 40px;
 }
-
-/* .faq-content {
-  flex-basis: 40%;
-} */
 
 /* ==========================================================================
    Helper classes
