@@ -143,7 +143,7 @@ p {
 }
  
 img {
- max-width: 100%;
+ width: 100%;
 }
  
 figure {
@@ -158,6 +158,8 @@ address {
   width: 90%;
   margin: 50px 0;
 }
+
+/* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
 footer {
@@ -225,13 +227,6 @@ footer p {
   margin: 0;
 }
 
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
@@ -247,9 +242,31 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer .copyright {
   margin: 20px 0;
 }
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
 
@@ -267,6 +284,8 @@ footer .copyright {
   font-size: 2.25em;
 }
 
+/* Aside */
+
 aside {
   background-color: #527158;
   display: flex;
@@ -275,7 +294,7 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .form{
+aside .form {
   margin-top: 30px;
 }
 
@@ -421,6 +440,14 @@ input[type=button] {
   line-height: 1;
 }
 
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
 .faq-content h4 {
   line-height: 1.333;
   font-weight: 700;
@@ -550,7 +577,6 @@ input[type=button] {
 
   header nav {
     width: 20%;
-    justify-content: space-between;
   }
 
   header nav ul {
@@ -600,6 +626,10 @@ input[type=button] {
     width: 50%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
   .reviews article {
     display: flex;
@@ -610,6 +640,7 @@ input[type=button] {
     width: 90%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -644,6 +675,11 @@ input[type=button] {
       line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+  
   footer .copyright {
     width: 100%;
   }
@@ -723,11 +759,12 @@ input[type=button] {
       font-size: 1.125em;
       line-height: 1.333;
   }
+
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
     width: 60%;
-}
+  }
 
   /* Aside */
   aside .content-wrapper {
