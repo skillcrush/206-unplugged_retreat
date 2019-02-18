@@ -216,12 +216,6 @@ footer .social-icons p {
   align-items: center;
 }
 
-footer .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 footer .copyright {
   margin: 20px 0;
 }
