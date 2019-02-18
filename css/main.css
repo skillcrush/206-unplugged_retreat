@@ -256,12 +256,6 @@ footer .social-icons p i {
   font-size: 1.3125em;
 }
 
-footer .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 footer .copyright {
   margin: 20px 0;
 }
