@@ -173,7 +173,7 @@ footer .social-icons p {
   align-items: center;
 }
 
-.footer .social {
+footer .social {
   display: flex;
   justify-content: space-between;
   align-items: center;
