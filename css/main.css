@@ -256,7 +256,7 @@ footer .social-icons p i {
   font-size: 1.3125em;
 }
 
-.footer .social {
+footer .social {
   display: flex;
   justify-content: space-between;
   align-items: center;
