@@ -368,7 +368,7 @@ input[type=button] {
 .map figure {
   width: 100%;
   height: 0; 
-  padding-bottom: 93%; 
+  padding-bottom: 80%; 
   overflow: hidden;
   position: relative;
 }
@@ -664,7 +664,7 @@ input[type=button] {
   }
 
   .map figure {
-    padding-bottom: 58.5%;
+    padding-bottom: 45.5%;
   }
   
   .contact-section .content-wrapper h2 {
@@ -763,7 +763,7 @@ input[type=button] {
   About Page
   ========================================================================== */
   .map figure {
-    padding-bottom: 32.5%;
+    padding-bottom: 37.5%;
   }
 
   .mission h2,
