@@ -253,7 +253,7 @@ aside {
 }
 
 .features article {
-  width: 55%;
+  width: 63%;
   margin: 30px 0;
 }
 
@@ -434,6 +434,7 @@ aside {
   /* Header */
   header {
     justify-content: space-around;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
@@ -464,7 +465,7 @@ aside {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 35%;
+    width: 40%;
     margin: 0;
   }
 
@@ -478,7 +479,7 @@ aside {
   }
   
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* Reviews */
@@ -519,10 +520,11 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
   }
 
   .mission-content p {
-    width: 40%;
+    width: 45%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -544,7 +546,7 @@ aside {
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
@@ -554,6 +556,10 @@ aside {
 
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
+
+  header {
+    padding: 15px 0;
+  }
 
   .content-wrapper {
     max-width: 960px;
@@ -577,7 +583,7 @@ aside {
   /* Features */
 
   .features h2 {
-    width: 70%;
+    width: 90%;
   }
 
   .features article {
@@ -595,11 +601,7 @@ aside {
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-      width: 100%;
-  }
-
-  .contact-section .content-wrapper h2 {
-    margin-bottom: 40px;
+      width: 95%;
   }
 
   /* ==========================================================================
@@ -609,9 +611,6 @@ aside {
     width: 100%;
   }
 
-  .faq-content {
-    flex-basis: 35%;
-  }
 }
 
 /* ==========================================================================
