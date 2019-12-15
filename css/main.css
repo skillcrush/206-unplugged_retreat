@@ -209,7 +209,7 @@ aside {
 }
 
 .features article {
-  width: 55%;
+  width: 63%;
   margin: 30px 0;
 }
 
@@ -391,6 +391,7 @@ aside {
     /* Header */
     header {
       justify-content: space-around;
+      padding: 33px 0;
     }
   
     header .content-wrapper {
@@ -421,7 +422,7 @@ aside {
   
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-      width: 35%;
+      width: 40%;
       margin: 0;
     }
   
@@ -476,10 +477,11 @@ aside {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-top: 20px
     }
   
     .mission-content p {
-      width: 40%;
+      width: 45%;
     }
   
     .contact-section .content-wrapper h2 {
@@ -501,7 +503,7 @@ aside {
     }
   
     .faq-content {
-      flex-basis: 40%;
+      flex-basis: 45%;
     }
   
     .faq h2 {
