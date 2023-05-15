@@ -98,13 +98,9 @@ textarea {
    ========================================================================== */
 
 /* -------------------- Base Header - Footer Styles -------------------- */
-
-header,
-footer {
+header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 header .content-wrapper {
@@ -114,16 +110,16 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 header nav ul {
   display: flex;
   justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 footer .social-icons {
@@ -146,7 +142,6 @@ footer .social-icons p {
 .hero-area {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 /* Aside */
@@ -154,8 +149,6 @@ footer .social-icons p {
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /* Features */
@@ -163,13 +156,12 @@ aside {
 .features {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -178,7 +170,6 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 /* ==========================================================================
@@ -188,15 +179,11 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /* ==========================================================================
@@ -206,8 +193,6 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
@@ -324,6 +309,7 @@ aside {
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -334,16 +320,20 @@ aside {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -352,14 +342,17 @@ aside {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -367,16 +360,19 @@ aside {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
