@@ -96,23 +96,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
-
-header,
-footer {
+header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-header {
   padding: 15px 0;
 }
 
@@ -131,10 +123,6 @@ header .content-wrapper {
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
 }
 
@@ -145,7 +133,10 @@ header nav ul {
 }
 
 footer {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 footer p {
@@ -184,7 +175,6 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 /* Aside */
@@ -192,8 +182,6 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /* Features */
@@ -201,7 +189,6 @@ aside {
 .features {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .features h2 {
@@ -216,7 +203,7 @@ aside {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -229,7 +216,6 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .reviews h2 {
@@ -248,15 +234,11 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .contact-content p {
@@ -270,16 +252,14 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
@@ -379,137 +359,136 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width:768px) {
-    /*Tablet styles here*/
-  
-    /* General styles */
-    .content-wrapper {
-      max-width: 640px;
-      margin: 100px 0;
-    }
-  
-    /* Header */
-    header {
-      justify-content: space-around;
-      padding: 33px 0;
-    }
-  
-    header .content-wrapper {
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    header nav {
-      width: 20%;
-    }
-  
-    header nav ul {
-      justify-content: space-between;
-    }
-  
-    .header-divider {
-      display: none;
-    }
-    /* Hero Area */
-  
-    /* Aside */
-    aside .content-wrapper {
-      margin: 50px 0;
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-    }
-  
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-      width: 40%;
-      margin: 0;
-    }
-  
-    /* Features */
-    .features article {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column wrap;
-      flex-basis: 50%;
-    }
-    
-    .features .features-item-description {
-      width: 50%;
-    }
-  
-    /* Reviews */
-    .reviews article {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .reviews article div {
-      width: 49%;
-    }
-  
-    /* Footer */
-    footer .content-wrapper {
-      width: 65%;
-      margin: 100px 0;
-    }
-  
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    footer .contact {
-      margin-bottom: 0;
-    }
-  
-    footer .copyright {
-      width: 100%;
-    }
-  
-    /* ==========================================================================
+@media only screen and (min-width:768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* ==========================================================================
      About Page
      ========================================================================== */
-  
-    .mission-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 20px
-    }
-  
-    .mission-content p {
-      width: 45%;
-    }
-  
-    .contact-section .content-wrapper h2 {
-      width: 80%;
-    }
-  
-    .contact-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-  
-    /* ==========================================================================
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* ==========================================================================
      FAQ Page
      ========================================================================== */
-  
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
-  
-    .faq-content {
-      flex-basis: 45%;
-    }
-  
-    .faq h2 {
-      width: 100%;
-    }
+
+  .faq .content-wrapper {
+    justify-content: space-between;
   }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+}
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
@@ -525,6 +504,7 @@ aside {
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -535,16 +515,20 @@ aside {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -553,14 +537,17 @@ aside {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -568,16 +555,19 @@ aside {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
