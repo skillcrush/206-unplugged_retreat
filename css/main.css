@@ -100,7 +100,7 @@ textarea {
 /* General Styles */
  
 html {
-	font-size: 16px;
+	font-size: 1rem;
 }
  
 body {
@@ -147,15 +147,9 @@ address {
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
-header,
-footer {
+header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-header {
   padding: 15px 0;
 }
 
@@ -174,10 +168,6 @@ header .content-wrapper {
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
 }
 
@@ -188,7 +178,10 @@ header nav ul {
 }
 
 footer {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 footer p {
@@ -220,7 +213,6 @@ footer .copyright {
   margin: 20px 0;
 }
 
-
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
@@ -228,7 +220,6 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 /* Aside */
@@ -236,8 +227,6 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 /* Features */
@@ -245,7 +234,6 @@ aside {
 .features {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .features h2 {
@@ -260,7 +248,7 @@ aside {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -273,7 +261,6 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
 }
 
 .reviews h2 {
@@ -292,15 +279,11 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .contact-content p {
@@ -314,16 +297,14 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
@@ -433,7 +414,6 @@ aside {
 
   /* Header */
   header {
-    justify-content: space-around;
     padding: 33px 0;
   }
 
@@ -460,7 +440,7 @@ aside {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    align-content: flex-start;
   }
 
   aside .content-wrapper .form-description,
@@ -472,7 +452,6 @@ aside {
   /* Features */
   .features article {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
@@ -540,7 +519,6 @@ aside {
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
-
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -567,7 +545,7 @@ aside {
 
   /* Hero */
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
 }
 
   /* Aside */
@@ -620,6 +598,7 @@ aside {
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -630,16 +609,20 @@ aside {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -648,14 +631,17 @@ aside {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -663,16 +649,19 @@ aside {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
