@@ -300,6 +300,7 @@ input[type=button] {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
