@@ -333,6 +333,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -749,14 +750,6 @@ input[type=button] {
 
   .reviews article div {
     width: 42%;
-  }
-
-  footer h4 {
-    font-size: 1.875em;
-  }
-
-  .reviews h2 {
-    padding-bottom: 50px;
   }
 
   footer h4 {
