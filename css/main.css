@@ -218,7 +218,6 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 
 footer .contact {
@@ -406,7 +405,7 @@ input[type=button] {
   margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -631,7 +630,6 @@ input[type=button] {
   /* Footer */
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
   }
 
   footer .footer-content {
@@ -669,7 +667,7 @@ input[type=button] {
   .mission-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 20px;
   }
 
@@ -721,12 +719,14 @@ input[type=button] {
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
 
-  header {
-    padding: 15px 0;
-  }
-
+  /* General styles */
   .content-wrapper {
     max-width: 960px;
+  }
+
+  /* Header */
+  header {
+    padding: 15px 0;
   }
 
   h2 {
