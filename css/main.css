@@ -98,48 +98,48 @@ textarea {
    ========================================================================== */
 
 /* General Styles */
- 
+
 html {
-	font-size: 1rem;
+  font-size: 1rem;
 }
- 
+
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   text-align: left;
 }
- 
-ul, 
+
+ul,
 ol {
   list-style-type: none;
 }
- 
+
 a {
   color: #e2e3ed;
   text-decoration: none;
 }
- 
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
 }
- 
-h3, 
+
+h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   margin: 20px 0;
   font-size: 1.125em;
 }
- 
+
 p {
   font-size: .875em;
   line-height: 1.285;
 }
-  
+
 address {
- font-style: normal;
+  font-style: normal;
 }
- 
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -190,7 +190,6 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 
 footer .contact {
@@ -302,7 +301,7 @@ aside {
 .faq .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
@@ -314,6 +313,7 @@ aside {
 .faq-content {
   margin-bottom: 50px;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -433,6 +433,7 @@ aside {
   .header-divider {
     display: none;
   }
+
   /* Hero Area */
 
   /* Aside */
@@ -456,7 +457,7 @@ aside {
     flex-flow: column wrap;
     flex-basis: 50%;
   }
-  
+
   .features .features-item-description {
     width: 62%;
   }
@@ -474,7 +475,6 @@ aside {
   /* Footer */
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
   }
 
   .footer-content {
@@ -498,7 +498,7 @@ aside {
   .mission-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 20px;
   }
 
@@ -535,18 +535,20 @@ aside {
 @media only screen and (min-width:1200px) {
   /*Desktop styles here*/
 
-  header {
-    padding: 15px 0;
-  }
-
+  /* General styles */
   .content-wrapper {
     max-width: 960px;
+  }
+
+  /* Header */
+  header {
+    padding: 15px 0;
   }
 
   /* Hero */
   .hero-area h1 {
     width: 80%;
-}
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -567,7 +569,7 @@ aside {
   .features article {
     flex-basis: 33%;
   }
-  
+
   /* Reviews */
   .reviews article div {
     width: 42%;
@@ -579,7 +581,7 @@ aside {
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-      width: 95%;
+    width: 95%;
   }
 
   /* ==========================================================================
