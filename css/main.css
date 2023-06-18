@@ -145,7 +145,6 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 
 footer .contact {
@@ -257,7 +256,7 @@ aside {
 .faq .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
@@ -431,7 +430,6 @@ aside {
   /* Footer */
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
   }
 
   .footer-content {
@@ -455,7 +453,7 @@ aside {
   .mission-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 20px
   }
 
