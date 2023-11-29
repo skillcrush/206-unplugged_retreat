@@ -293,32 +293,6 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-aside .form {
-  margin-top: 30px;
-}
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 /* Features */
 
 .features {
@@ -515,16 +489,6 @@ input[type=button] {
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
-  }
-
-  h2 {
-    font-size: 2.25em;
-    line-height: 1.333;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    line-height: 1.25;
   }
 
   h2 {
