@@ -106,6 +106,8 @@ body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
+  /* *** Use a lighter color for text for better color contrast */
+  color: #E9EAF1;
   text-align: left;
   background-color: #202322;
 }
@@ -122,7 +124,9 @@ a {
   text-decoration: none;
 }
 
-h2 {
+/* *** Added the h1 for the mission page */
+h2,
+.mission h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
@@ -286,9 +290,12 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  /* *** Create space between label and input */
+  margin-top: 10px;
 }
 
-input[type=button] {
+/* *** Style the button the same as the input[type=button] by replacing the selector */
+.btn-primary {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
@@ -409,7 +416,8 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.faq h2 {
+/* *** Changed from h2 to h1 */
+.faq h1 {
   margin-bottom: 40px;
   line-height: 1;
 }
@@ -418,7 +426,8 @@ input[type=button] {
   margin-bottom: 50px;
 }
 
-.faq-content h4 {
+/* *** Changed h4 to h2 */
+.faq-content h2 {
   line-height: 1.333;
 }
 
@@ -520,7 +529,10 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  h2 {
+  /* *** Added the h1 for the mission and faq pages */
+  h2,
+  .mission h1,
+  .faq h1 {
     font-size: 2.25em;
     line-height: 1.333;
   }
@@ -573,7 +585,9 @@ input[type=button] {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    align-content: flex-start;
+    /* align-content: flex-start; */
+    /* *** align the form and form description at their centers */
+    align-items: center;
   }
 
   aside .content-wrapper .form-description,
@@ -642,7 +656,8 @@ input[type=button] {
     margin-bottom: 0;
   }
 
-  footer h4 {
+  /* *** Changed h4 to h3 */
+  footer h3 {
     font-size: 1.5em;
     margin-bottom: 40px;
   }
@@ -689,7 +704,8 @@ input[type=button] {
     align-items: flex-start;
   }
 
-  .contact-content h4 {
+  /* *** changed from h4 to h3 */
+  .contact-content h3 {
     font-size: 1.5em;
   }
 
@@ -705,11 +721,13 @@ input[type=button] {
     flex-basis: 45%;
   }
 
-  .faq h2 {
+  /* *** Changed from h2 to h1  */
+  .faq h1 {
     width: 100%;
   }
 
-  .faq h4,
+  /* *** Changed from h4 to h2 */
+  .faq h2,
   .faq p {
     font-size: .875em;
     line-height: 1.125;
@@ -783,7 +801,8 @@ input[type=button] {
     width: 42%;
   }
 
-  footer h4 {
+  /* *** Changed h4 to h3 */
+  footer h3 {
     font-size: 1.875em;
   }
 
@@ -800,19 +819,22 @@ input[type=button] {
     font-size: 3em;
   }
 
-  .contact-content h4 {
+  /* *** Changed h4 to h3 */
+  .contact-content h3 {
     font-size: 1.875em;
   }
 
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
-  .faq h2 {
+  /* *** No longer needed since updating header hierarchy */
+  /* .faq h2 {
     width: 100%;
     font-size: 3em;
-  }
+  } */
 
-  .faq h4,
+  /* *** Changed from h4 to h2 */
+  .faq h2,
   .faq p {
     font-size: 1.125em;
     line-height: 1;
@@ -844,11 +866,11 @@ input[type=button] {
   }
 
   a[href]:after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]:after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*
