@@ -98,6 +98,7 @@ textarea {
    ========================================================================== */
 
 /* General Styles */
+
 html {
   font-size: 1rem;
 }
@@ -105,11 +106,9 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
-  color: #e2e3ed;
-  /* *** Use a lighter color for text for better color contrast */
+  /* color: #e2e3ed; */
   color: #E9EAF1;
   text-align: left;
-  background-color: #202322;
 }
 
 ul,
@@ -124,15 +123,16 @@ a {
   text-decoration: none;
 }
 
-/* *** Added the h1 for the mission page */
-h2,
-.mission h1 {
+.mission h1,
+h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
   margin: 0;
 }
 
+.form-description h2,
+.faq h2,
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
@@ -166,10 +166,10 @@ address {
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header {
-  background-color: #202322;
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -209,11 +209,11 @@ header nav ul li {
 }
 
 footer {
-  background-color: #202322;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer p {
@@ -290,11 +290,9 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
-  /* *** Create space between label and input */
   margin-top: 10px;
 }
 
-/* *** Style the button the same as the input[type=button] by replacing the selector */
 .btn-primary {
   width: 100%;
   padding: 20px 0;
@@ -331,6 +329,7 @@ input[type=text] {
 .features .features-items {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -409,14 +408,13 @@ input[type=text] {
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
-/* *** Changed from h2 to h1 */
 .faq h1 {
   margin-bottom: 40px;
   line-height: 1;
@@ -426,8 +424,8 @@ input[type=text] {
   margin-bottom: 50px;
 }
 
-/* *** Changed h4 to h2 */
-.faq-content h2 {
+.faq-content h2,
+.faq-content h4 {
   line-height: 1.333;
 }
 
@@ -529,14 +527,14 @@ input[type=text] {
     margin: 100px 0;
   }
 
-  /* *** Added the h1 for the mission and faq pages */
-  h2,
   .mission h1,
-  .faq h1 {
+  .faq h1,
+  h2 {
     font-size: 2.25em;
     line-height: 1.333;
   }
 
+  .form-description h2,
   h3 {
     font-size: 1.5em;
     line-height: 1.25;
@@ -585,8 +583,7 @@ input[type=text] {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    /* align-content: flex-start; */
-    /* *** align the form and form description at their centers */
+    align-content: flex-start;
     align-items: center;
   }
 
@@ -600,10 +597,6 @@ input[type=text] {
 
   .features h2 {
     margin-bottom: 20px;
-  }
-
-  .features .features-items {
-    align-items: flex-start;
   }
 
   .features article {
@@ -650,14 +643,15 @@ input[type=text] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
   }
 
-  /* *** Changed h4 to h3 */
-  footer h3 {
+  footer h3,
+  footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
   }
@@ -704,15 +698,14 @@ input[type=text] {
     align-items: flex-start;
   }
 
-  /* *** changed from h4 to h3 */
-  .contact-content h3 {
+  .contact-content h3,
+  .contact-content h4 {
     font-size: 1.5em;
   }
 
   /* ==========================================================================
    FAQ Page
    ========================================================================== */
-
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -721,13 +714,13 @@ input[type=text] {
     flex-basis: 45%;
   }
 
-  /* *** Changed from h2 to h1  */
-  .faq h1 {
+  .faq h1,
+  .faq h2 {
     width: 100%;
   }
 
-  /* *** Changed from h4 to h2 */
   .faq h2,
+  .faq h4,
   .faq p {
     font-size: .875em;
     line-height: 1.125;
@@ -751,6 +744,7 @@ input[type=text] {
     font-size: 2.25em;
   }
 
+  .form-description h2,
   h3,
   h4 {
     font-size: 1.875em;
@@ -774,7 +768,7 @@ input[type=text] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 40%;
   }
 
   .form-description p {
@@ -782,6 +776,7 @@ input[type=text] {
   }
 
   /* Features */
+
 
   .features h2 {
     width: 90%;
@@ -801,8 +796,8 @@ input[type=text] {
     width: 42%;
   }
 
-  /* *** Changed h4 to h3 */
-  footer h3 {
+  footer h3,
+  footer h4 {
     font-size: 1.875em;
   }
 
@@ -821,8 +816,8 @@ input[type=text] {
     font-size: 3em;
   }
 
-  /* *** Changed h4 to h3 */
-  .contact-content h3 {
+  .contact-content h3,
+  .contact-content h4 {
     font-size: 1.875em;
   }
 
@@ -835,8 +830,8 @@ input[type=text] {
     font-size: 3em;
   } */
 
-  /* *** Changed from h4 to h2 */
   .faq h2,
+  .faq h4,
   .faq p {
     font-size: 1.125em;
     line-height: 1;
