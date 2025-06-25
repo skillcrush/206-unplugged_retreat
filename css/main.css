@@ -297,8 +297,7 @@ input[type=text] {
   margin-top: 10px;
 }
 
-/* *** Style the button the same as the input[type=button] by replacing the selector */
-.btn-primary {
+input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
